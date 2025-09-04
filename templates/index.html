@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<head>
+  <title>Vail Ski Weather</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h1>Vail Ski Weather</h1>
+  <p>Temperature: {{ weather.temp }}°F</p>
+  <p>Condition: {{ weather.description }}</p>
+</body>
+</html>

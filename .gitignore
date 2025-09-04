@@ -1,0 +1,4 @@
+# keep secrets and junk out of GitHub
+.env
+__pycache__/
+*.pyc
