@@ -1,66 +1,55 @@
-\# Vail Ski Weather
+# Vail Ski Weather
 
-
-
-This is a small project I built to check the ski weather in Vail, Colorado.  
+This is a small project I built to check the ski weather in Vail, Colorado.
 
 A lot of apps around the area are paid, so I wanted something free, simple, and quick that I (and others) could use.
 
+## How to Run
 
+1. Make sure you have Python 3 installed.
 
-\## How to Run
+2. Open your terminal / command prompt and go into the project folder:
 
+  cd vail-ski-weather
 
+3. Install the required packages:
 
-1\. Make sure you have Python 3 installed.
+  pip install flask requests python-dotenv
 
-2\. Open your terminal / command prompt and go into the project folder:
+4. Create a file called .env in the root folder and put your API key inside:
 
-&nbsp;  cd vail-ski-weather
+  OPENWEATHER_API_KEY=your_key_here
 
-3\. Install the required packages:
+5. Start the app:
 
-&nbsp;  pip install flask requests python-dotenv
+  python app.py
 
-4\. Create a file called .env in the root folder and put your API key inside:
+6. Open your browser and go to:
 
-&nbsp;  OPENWEATHER\_API\_KEY=your\_key\_here
+  http://127.0.0.1:5000
 
-5\. Start the app:
+## Project Files
 
-&nbsp;  python app.py
+- **app.py** → main Flask app with one route
 
-6\. Open your browser and go to:
+- **weather.py** → handles the OpenWeather API call and error handling
 
-&nbsp;  http://127.0.0.1:5000
+- **templates/index.html** → page layout
 
+- **static/style.css** → a little styling
 
+- **.gitignore** → keeps .env and extra files out of GitHub
 
-\## Project Files
+## Screenshot
 
+Here’s the app running locally:
 
+![App Screenshot](screenshot.png)
 
-\- \*\*app.py\*\* → main Flask app with one route  
+## Notes
 
-\- \*\*weather.py\*\* → handles the OpenWeather API call and error handling  
+- The API key should never be uploaded (that’s why .env is ignored).
 
-\- \*\*templates/index.html\*\* → page layout  
+- It’s a simple project but solves a real problem — quick weather info for Vail.
 
-\- \*\*static/style.css\*\* → a little styling  
-
-\- \*\*.gitignore\*\* → keeps `.env` and extra files out of GitHub
-
-
-
-\## Notes
-
-
-
-\- The API key should never be uploaded (that’s why `.env` is ignored).  
-
-\- It’s a simple project but solves a real problem — quick weather info for Vail.  
-
-\- I kept it lightweight with Flask and plain HTML/CSS so it’s easy to understand.
-
-
-
+- I kept it lightweight with Flask and plain HTML/CSS so it’s easy to understand.
