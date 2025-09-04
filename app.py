@@ -21,7 +21,4 @@ def home():
         })
 
 if __name__ == "__main__":
-if __name__ == "__main__":
-    # Debug ON locally is fine; turn OFF in production
-    app.run(debug=True)
     app.run(debug=False)
